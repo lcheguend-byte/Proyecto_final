@@ -1,0 +1,38 @@
+﻿  cliente.cpp
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\cliente.h(70,46): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "cliente.cpp")
+  
+  ConexionSP.cpp
+  Empleado.cpp
+  main.cpp
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Cliente.h(70,46): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Producto.h(78,47): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Proveedor.h(60,49): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Puesto.h(33,45): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+  Marca.cpp
+  Persona.cpp
+  Producto.cpp
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Producto.h(78,47): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Producto.cpp")
+  
+  Proveedor.cpp
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Proveedor.h(60,49): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Proveedor.cpp")
+  
+  Puesto.cpp
+C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\Supermercado_Patito\Puesto.h(33,45): warning C4244: '=': conversión de 'uint64_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Puesto.cpp")
+  
+  Generando código
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 261 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  Supermercado_Patito.vcxproj -> C:\Users\luisc\OneDrive\Escritorio\Progra\Proyecto conjunto\Supermercado_Patito\x64\Release\Supermercado_Patito.exe

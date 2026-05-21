@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Supermercado_Patito/Supermercado_Patito.vcxproj" Id="9856d146-7641-464f-9067-24d93d8414ce">
+    <BuildType Solution="Debug|x64" Project="Release" />
+  </Project>
+</Solution>
