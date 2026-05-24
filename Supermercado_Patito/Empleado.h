@@ -34,7 +34,26 @@ public:
     void setId_puesto(int id_p) { id_puesto = id_p; }
     void setFecha_inicio_labores(string fil) { fecha_inicio_labores = fil; }
 
+    // ===================================================
+    //  RESTRICCIONES DE SEGURIDAD (MANUEL REYES.)
+    // ===================================================
+    void validarDatos() {
+        if (nombres.empty()) {
+            cout << "\n[RESTRICCION]: El nombre del empleado no puede estar vacio.\n";
+        }
+        if (apellidos.empty()) {
+            cout << "\n[RESTRICCION]: El apellido del empleado no puede estar vacio.\n";
+        }
+        if (cui.empty()) {
+            cout << "\n[RESTRICCION]: El CUI del empleado no puede estar vacio.\n";
+        }
+        if (id_puesto == 0) {
+            cout << "\n[RESTRICCION]: El empleado debe tener un puesto asignado (ID valido).\n";
+        }
+    }
+
     void crear() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {
@@ -75,6 +94,7 @@ public:
     }
 
     void actualizar() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {

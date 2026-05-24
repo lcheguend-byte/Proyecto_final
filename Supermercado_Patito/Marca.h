@@ -24,7 +24,17 @@ public:
     int getId_marca() { return id_marcas; }
     string getMarca() { return marcas; }
 
+    // ===================================================
+     //  RESTRICCIONES DE SEGURIDAD (MANUEL REYES.)
+     // ===================================================
+    void validarDatos() {
+        if (marcas.empty()) {
+            cout << "\n[RESTRICCION]: El nombre de la marca no puede estar vacio.\n";
+        }
+    }
+    
     void crear() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {
@@ -64,6 +74,7 @@ public:
 		cn.cerrarConexion();
 	}
     void actualizar() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {

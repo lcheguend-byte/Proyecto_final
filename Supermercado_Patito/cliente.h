@@ -53,11 +53,27 @@ public:
     string getTelefono() { return telefono; }
     string getCorreoElectronico() { return correo_electronico; }
 
+    // ===================================================
+    // RESTRICCIONES DE SEGURIDAD (MANUEL REYES.)
+    // ===================================================
+    void validarDatos() {
+        if (nit.empty()) {
+            cout << "\n[RESTRICCION]: El NIT del cliente no puede estar vacio.\n";
+        }
+        if (nombres.empty()) {
+            cout << "\n[RESTRICCION]: El nombre del cliente no puede estar vacio.\n";
+        }
+        if (telefono.empty()) {
+            cout << "\n[RESTRICCION]: El telefono del cliente no puede estar vacio.\n";
+        }
+    }
+
     // ==============================================
     // METODOS CRUD (Base de Datos)
     // ==============================================
 
     void crear() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {
@@ -120,6 +136,7 @@ public:
     }
 
     void actualizar() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {

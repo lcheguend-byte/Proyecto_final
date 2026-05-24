@@ -48,4 +48,16 @@ public:
     string getDireccion() { return direccion; }
     int getTelefono() { return telefono; }
     string getFecha_Nacimiento() { return fecha_nacimiento; }
+
+    // ===================================================
+    //  RESTRICCIONES DE SEGURIDAD (MANUEL REYES.)
+    // ===================================================
+    void validarDatos() {
+        if (nombres.empty()) {
+            cout << "\n[RESTRICCION]: El nombre no puede estar vacio.\n";
+        }
+        if (apellidos.empty()) {
+            cout << "\n[RESTRICCION]: El apellido no puede estar vacio.\n";
+        }
+    }
 };

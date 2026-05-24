@@ -24,7 +24,17 @@ public:
     int getId_puesto() { return id_puestos; }
     string getPuesto() { return puesto; }
 
+    // ===================================================
+    //  RESTRICCIONES DE SEGURIDAD (MANUEL REYES.)
+    // ===================================================
+    void validarDatos() {
+        if (puesto.empty()) {
+            cout << "\n[RESTRICCION]: El nombre del puesto no puede estar vacio.\n";
+        }
+    }
+    
     void crear() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {
@@ -57,6 +67,7 @@ public:
     }
 
     void actualizar() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {

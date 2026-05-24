@@ -57,11 +57,34 @@ public:
     double getPrecio_venta() { return precio_venta; }
     int getExistencia() { return existencia; }
 
+
+    // ==============================================
+    //  RESTRICCIONES DE SEGURIDAD (MANUEL REYES.)
+    // ==============================================
+    void validarDatos() {
+        
+        if (producto.empty()) {
+            cout << "\n[RESTRICCION]: El nombre del producto no puede estar vacio.\n";
+        }
+        if (precio_costo <= 0) {
+            cout << "\n[RESTRICCION]: El precio de costo debe ser mayor a Q0.00.\n";
+        }
+        if (precio_venta <= precio_costo) {
+            cout << "\n[RESTRICCION]: El precio de venta debe dejar ganancias (mayor al costo).\n";
+        }
+        if (existencia < 0) {
+            cout << "\n[RESTRICCION]: La existencia no puede ser negativa.\n";
+        }
+    }
+
+    
+
     // ==============================================
     // METODOS CRUD (Base de Datos)
     // ==============================================
 
     void crear() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {
@@ -126,6 +149,7 @@ public:
     }
 
     void actualizar() {
+        validarDatos();
         ConexionSP cn = ConexionSP();
         cn.abrirConexion();
         if (cn.getConexion()) {

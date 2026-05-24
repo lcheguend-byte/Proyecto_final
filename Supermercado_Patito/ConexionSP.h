@@ -8,7 +8,7 @@ private:
 public:
 	void abrirConexion() {
 		Conexion = mysql_init(0);
-		Conexion = mysql_real_connect(Conexion, "localhost", "root", "Hunterxhunter.1", "supermercadopatito", 3306, NULL, 0);
+		Conexion = mysql_real_connect(Conexion, "localhost", "root", "Manue1234!", "supermercado_patito", 3306, NULL, 0);
 	}
 	MYSQL* getConexion() {
 		return Conexion;
